@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+    shellcheck:
+        build: .
+        image: e11it/shellcheck
+        container_name: shellcheck
