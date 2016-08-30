@@ -3,7 +3,7 @@ FROM debian:jessie
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update \
-  && apt-get install -y locales -qq \
+  && apt-get install -y locales make -qq \
   && sed -i 's/^# *\(en_US.UTF-8\)/\1/' /etc/locale.gen \
   && sed -i 's/^# *\(C.UTF-8\)/\1/' /etc/locale.gen \
   && locale-gen \
