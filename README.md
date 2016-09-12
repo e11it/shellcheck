@@ -9,3 +9,6 @@ within a docker container.
 docker run --rm -v $(pwd)/SHELLSCRIPT.sh:/tmp/FileToBeChecked -it e11it/shellcheck
 ```
 
+## Env
+
+* `SHELLCHECK_EXCLUDE` -- exclude SC from shellcheck
